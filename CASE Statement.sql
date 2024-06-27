@@ -1,5 +1,6 @@
-select * from Duplicate_StudentMarks; -- before updation
+--(refer PNG file of the same to see the table and result)
 
+select * from Duplicate_StudentMarks; -- before updation
 
 update Duplicate_StudentMarks 
 set Marks = case
