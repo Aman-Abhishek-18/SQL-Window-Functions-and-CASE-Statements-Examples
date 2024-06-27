@@ -1,3 +1,7 @@
+--SQL provides a variety of datetime functions to handle date and time data. These functions are used to perform 
+--operations such as extracting specific parts of a date, formatting dates, calculating intervals, and converting 
+--between different datetime formats.
+
 select top 5 updated_date, 
 	DATEPART(YEAR, updated_date) as year,
 	DATEPART(MONTH, updated_date) as month,
@@ -15,3 +19,5 @@ select top 5 updated_date,
 	DATEADD(DAY, -1, CAST(GETDATE()as date)) as Yesterday_date,
 	DATEDIFF(Day, Updated_Date, GETDATE()) AS DaysSinceUpdated
 from tbl_Employees
+
+--(refer PNG file of the same to see the table and result)
